@@ -1,11 +1,14 @@
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+
+dotenv.config(); // Load environment variables from .env file
 
 // Create a transporter object using SMTP transport
 let transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'abdallahborghoul@gmail.com',  // Your Gmail email address
-    pass: 'gailanda'           // Your Gmail password or application-specific password
+    user: process.env.GMAIL_USER,  // Use environment variable for email address
+    pass: process.env.GMAIL_PASS   // Use environment variable for password
   }
 });
 
@@ -16,7 +19,7 @@ function sendEmail(formData) {
 
     // Construct email message
     let mailOptions = {
-      from: 'abdallahborghoul@gmail.com',   // Sender address
+      from: process.env.GMAIL_USER,   // Sender address
       to: clientEmail,                // Recipient address (client's email address)
       subject: 'New Reservation',     // Subject line
       text: `New reservation details:\n\nName: ${formData.get('name')}\nPhone: ${formData.get('phone')}\n...`  // Email body
