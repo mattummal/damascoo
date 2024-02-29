@@ -1071,8 +1071,8 @@
 
               <button type="button" id="submitBtn" class="btn btn-secondary">
                 <span class="text text-1">Book A Table</span>
-
                 <span class="text text-2" aria-hidden="true">Book A Table</span>
+
               </button>
 
             </form>
@@ -1291,9 +1291,6 @@
   </main>
 
 
-
-
-
   <!--
     - #FOOTER
   -->
@@ -1427,32 +1424,35 @@
 
 
 
+<script src="./assets/js/client.js"></script>
 
-<!-- Add this script tag at the end of your HTML body -->
+<!-- Add this script tag at the end of your HTML body
 <script src="./assets/js/sendEmail.js"></script>
+<script src="./assets/js/client.js"></script>
 <script>
-  // Function to handle form submission
-  function handleSubmit(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+// Function to handle form submission
+function handleSubmit(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
 
-    // Get form data
-    var formData = new FormData(event.target);
+  // Get the form element
+  var form = document.getElementById('reservationForm');
 
-    // Send email notification
-    sendEmail(formData);
+  // Get form data
+  var formData = new FormData(form);
 
-    // Display a success message to the user
-    alert('Reservation submitted successfully! We will contact you shortly.');
-    // You can also redirect the user to a thank you page if needed
-    window.location.href = 'thanks.html';
-  }
+  // Send email notification
+  sendEmail(formData);
 
-  // Add a 'submit' event listener to the form
-  document.getElementById('submitBtn').addEventListener('click', function() {
-    document.getElementById('reservationForm').submit();
-  });
-</script>
+  // Display a success message to the user
+  alert('Reservation submitted successfully! We will contact you shortly.');
+  // You can also redirect the user to a thank you page if needed
+  window.location.href = 'thanks.html';
+}
 
+// Add a 'click' event listener to the submit button
+document.getElementById('submitBtn').addEventListener('click', handleSubmit);
+
+</script> -->
 
   <!--
     - custom js link
