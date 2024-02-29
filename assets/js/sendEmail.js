@@ -34,5 +34,3 @@ function sendEmail(formData) {
 
 // Export the sendEmail function
 module.exports = sendEmail;
-
-
