@@ -13,7 +13,7 @@ Daily : 8.00 am to 10.00 pm
 +1 123 456 7890
 
 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-book@damascoleuven.top
+leuvendamasco@gmail.com
 
 
 #---------- HEADER ----------#
@@ -36,7 +36,7 @@ London 9578, UK
 
 Open: 9.30 am - 2.30pm
 
-book@damascoleuven.top
+leuvendamasco@gmail.com
 
 Booking Request
 +32 489744576
@@ -307,7 +307,7 @@ alt = DAMASCO  home
 
 Restaurant St, Delicious City, London 9578, UK
 
-book@damascoleuven.top
+leuvendamasco@gmail.com
 
 Booking Request : +32 489744576
 
@@ -439,4 +439,4 @@ Contact Us
 Restaurant St, Delicious City, London 9578, UK
 
 +32 489744576
-book@damascoleuven.top
+leuvendamasco@gmail.com
